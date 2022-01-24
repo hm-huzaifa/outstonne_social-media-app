@@ -57,7 +57,7 @@ const CreatePin = ({ user }) => {
         title,
         about,
         destination,
-        category: category,
+        category,
         image: {
           _type: "image",
           asset: {
@@ -67,7 +67,7 @@ const CreatePin = ({ user }) => {
         },
         userId: user._id,
         postedBy: {
-          _type: "pin",
+          _type: "postedBy",
           _ref: user._id,
         },
       };
